@@ -1,6 +1,6 @@
-import RootLayout from "../components/Layout";
+import RootLayout from "@/components/Layout";
 // import Banner from "@/components/UI/Banner";
-// import FeaturedCategory from "@/components/UI/FeaturedCategory";
+import FeaturedCategory from "@/components/UI/FeaturedCategory";
 import Product from "@/components/UI/Product";
 
 function shuffleArray(array) {
@@ -15,6 +15,7 @@ const HomePage = ({ products }) => {
   const featuredProducts = shuffleArray(products?.slice(0, 6));
   const allCategories = products?.map((product) => product.category) || [];
   const uniqueCategories = [...new Set(allCategories)];
+  console.log(products);
 
   // Step 2: Create a list of featured categories (limit to 6 unique categories)
   const featuredCategories = uniqueCategories.slice(0, 7);
@@ -26,7 +27,7 @@ const HomePage = ({ products }) => {
           Featured Products
         </h1>
         <div className="flex flex-wrap mx-3">
-          {products.map((product) => (
+          {featuredProducts.map((product) => (
             <Product key={product.id} product={product} />
           ))}
         </div>
@@ -34,7 +35,7 @@ const HomePage = ({ products }) => {
           Featured Categories
         </h1>
         <div className="flex flex-wrap mx-3">
-          {/* {featuredCategories.map((category) => {
+          {featuredCategories.map((category) => {
             const categoryData = products.find(
               (product) => product.category === category
             );
@@ -50,7 +51,7 @@ const HomePage = ({ products }) => {
             }
 
             return null;
-          })} */}
+          })}
         </div>
       </div>
     </div>
@@ -68,7 +69,6 @@ export const getStaticProps = async () => {
     "https://pc-builder-server-black.vercel.app/products"
   );
   const data = await res.json();
-  console.log(data);
 
   return {
     props: {
