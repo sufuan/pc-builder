@@ -1,10 +1,4 @@
-### Live Site Link: https://pc-builder-orpin.vercel.app/
-
-### Live Server Link: https://pc-builder-server-black.vercel.app/products
-
-### GitHub Client Repo: https://github.com/shahidmonowarr/nextjs-pc-builder-app
-
-### GitHub Server Repo: https://github.com/shahidmonowarr/nextjs-pc-builder-server
+### Live Site Link: https://pc-builder-q45nihval-sufuan.vercel.app/
 
 <hr>
 

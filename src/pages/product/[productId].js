@@ -152,7 +152,8 @@ export const getStaticPaths = async () => {
     "https://pc-builder-server-black.vercel.app/products"
   );
   const data = await res.json();
-  const products = data;
+  const products = data?.data;
+  console.log(products);
   const paths = products?.map((product) => ({
     params: { productId: product._id.toString() },
   }));
