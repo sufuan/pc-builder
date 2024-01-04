@@ -3,13 +3,13 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Pc Builder", href: "pc-builder", current: true },
   { name: "cpu", href: "cpu", current: false },
   { name: "ram", href: "ram", current: false },
   { name: "monitor", href: "monitor", current: false },
   { name: "storage", href: "storage", current: false },
   { name: "psu", href: "psu", current: false },
   { name: "motherboard", href: "motherboard", current: false },
+  { name: "Pc Builder", href: "pc-builder" },
 ];
 
 function classNames(...classes) {
