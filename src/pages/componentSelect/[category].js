@@ -1,3 +1,4 @@
+import RootLayout from "@/components/Layouts/RootLayout";
 import SelectProduct from "@/components/UI/SelectProduct";
 import Head from "next/head";
 
