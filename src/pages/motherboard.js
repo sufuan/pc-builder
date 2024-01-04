@@ -1,7 +1,7 @@
 import RootLayout from "@/components/Layout";
 import Product from "@/components/UI/Product";
 
-const RAM = ({ products }) => {
+const Motherboard = ({ products }) => {
   const productCategory = products[0]?.category;
   return (
     <div className="container mx-auto my-10">
@@ -17,15 +17,15 @@ const RAM = ({ products }) => {
   );
 };
 
-export default RAM;
+export default Motherboard;
 
-RAM.getLayout = function getLayout(page) {
+Motherboard.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    "https://pc-builder-server-black.vercel.app/products?category=RAM"
+    "https://pc-builder-server-black.vercel.app/products?category=Motherboard"
   );
   const data = await res.json();
 

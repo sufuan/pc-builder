@@ -7,6 +7,9 @@ const navigation = [
   { name: "cpu", href: "cpu", current: false },
   { name: "ram", href: "ram", current: false },
   { name: "monitor", href: "monitor", current: false },
+  { name: "storage", href: "storage", current: false },
+  { name: "psu", href: "psu", current: false },
+  { name: "motherboard", href: "motherboard", current: false },
 ];
 
 function classNames(...classes) {
