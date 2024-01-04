@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/wgjs6Q8/Intel-core-cpu.jpg",
+      "name": "Intel Core i9-9900K",
+      "category": "CPU",
+      "price": 349.99,
+      "status": "In Stock",
+      "rating": 4.2
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/1RQL86Y/Asus-rog-motherboard.jpg",
+      "name": "ASUS ROG Strix Z390-E",
+      "category": "Motherboard",
+      "price": 199.99,
+      "status": "In Stock",
+      "rating": 4.2
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/JpQjn0z/corsair-ram-16gb.jpg",
+      "name": "Corsair Vengeance LPX 16GB",
+      "category": "RAM",
+      "price": 89.99,
+      "status": "In Stock",
+      "rating": 4.9
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/xGY3bL9/PSU.jpg",
+      "name": "EVGA Supernova 750 G3",
+      "category": "Power Supply Unit",
+      "price": 129.99,
+      "status": "In Stock",
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/FV2G5Ch/SSD.jpg",
+      "name": "Samsung 970 EVO 1TB NVMe SSD",
+      "category": "Storage Device",
+      "price": 179.99,
+      "status": "In Stock",
+      "rating": 4.8
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/9wXDLwD/monitor.jpg",
+      "name": "Dell S2719DGF 27\" QHD Monitor",
+      "category": "Monitor",
+      "price": 349.99,
+      "status": "Out of Stock",
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/5GrVYV3/cpu-processor-motherboard.jpg",
+      "name": "Logitech G Pro Mechanical Keyboard",
+      "category": "Others",
+      "price": 119.99,
+      "status": "In Stock",
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/gmH8YK7/hdd.jpg",
+      "name": "AMD Ryzen 7 5800X",
+      "category": "CPU",
+      "price": 379.99,
+      "status": "In Stock",
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/G5zXDpK/GIGABYTE-motherboard.jpg",
+      "name": "GIGABYTE B550 AORUS Pro",
+      "category": "Motherboard",
+      "price": 179.99,
+      "status": "In Stock",
+      "rating": 5
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co/JpQjn0z/corsair-ram-16gb.jpg",
+      "name": "G.Skill Trident Z RGB 32GB",
+      "category": "RAM",
+      "price": 159.99,
+      "status": "In Stock",
+      "rating": 4
+    },
+    {
+      "id": 11,
+      "image": "https://i.ibb.co/xGY3bL9/PSU.jpg",
+      "name": "Seasonic Focus GX-850",
+      "category": "Power Supply Unit",
+      "price": 139.99,
+      "status": "In Stock",
+      "rating": 3
+    },
+    {
+      "id": 12,
+      "image": "https://i.ibb.co/gmH8YK7/hdd.jpg",
+      "name": "Western Digital Blue 2TB HDD",
+      "category": "Storage Device",
+      "price": 69.99,
+      "status": "In Stock",
+      "rating": 5
+    },
+    {
+      "id": 13,
+      "image": "https://i.ibb.co/sKbtnQ5/3099005-35112.jpg",
+      "name": "LG 34GN850-B 34\" Ultrawide Monitor",
+      "category": "Monitor",
+      "price": 899.99,
+      "status": "In Stock",
+      "rating": 5
+    },
+    {
+      "id": 14,
+      "image": "https://i.ibb.co/pfX4Wkv/white-wireless-optical-mouse-digital-device.jpg",
+      "name": "Razer DeathAdder Elite Gaming Mouse",
+      "category": "Others",
+      "price": 49.99,
+      "status": "Out of Stock",
+      "rating": 4
+    },
+    {
+      "id": 15,
+      "image": "https://i.ibb.co/wgjs6Q8/Intel-core-cpu.jpg",
+      "name": "Intel Core i5-11600K",
+      "category": "CPU",
+      "price": 259.99,
+      "status": "In Stock",
+      "rating": 4
+    },
+    {
+      "id": 16,
+      "image": "https://i.ibb.co/5GrVYV3/cpu-processor-motherboard.jpg",
+      "name": "MSI MAG B560M Mortar",
+      "category": "Motherboard",
+      "price": 149.99,
+      "status": "In Stock",
+      "rating": 4.5
+    }
+  ]
+}

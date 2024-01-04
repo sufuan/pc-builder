@@ -1,5 +1,5 @@
-import RootLayout from "@/components/Layout";
-// import Banner from "@/components/UI/Banner";
+import RootLayout from "@/components/Layouts/RootLayout";
+import Banner from "@/components/UI/Banner";
 import FeaturedCategory from "@/components/UI/FeaturedCategory";
 import Product from "@/components/UI/Product";
 
@@ -21,7 +21,7 @@ const HomePage = ({ products }) => {
   const featuredCategories = uniqueCategories.slice(0, 7);
   return (
     <div>
-      {/* <Banner /> */}
+      <Banner />
       <div className="container mx-auto">
         <h1 className="font-bold text-2xl uppercase text-center py-4">
           Featured Products

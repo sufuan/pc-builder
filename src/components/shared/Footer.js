@@ -1,46 +1,39 @@
-// Footer.js
-import React from "react";
+/* eslint-disable jsx-a11y/alt-text */
+import Image from "next/image";
+import Link from "next/link";
+import logo from "../../assets/images/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white p-6">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div>
-            <h2 className="text-lg font-semibold mb-4">Company</h2>
-            <ul className="space-y-2">
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <li>Careers</li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-lg font-semibold mb-4">Products</h2>
-            <ul className="space-y-2">
-              <li>CPU / Processor</li>
-              <li>Motherboard</li>
-              <li>RAM</li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-lg font-semibold mb-4">Resources</h2>
-            <ul className="space-y-2">
-              <li>Documentation</li>
-              <li>Support</li>
-              <li>FAQs</li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-lg font-semibold mb-4">Connect</h2>
-            <ul className="space-y-2">
-              <li>Twitter</li>
-              <li>Facebook</li>
-              <li>Instagram</li>
-            </ul>
-          </div>
+    <div className="bg-base-200 ">
+      <footer className="container mx-auto footer p-10 text-base-content">
+        <div>
+          <Link href="/">
+            <Image src={logo} width={300} height={300} />
+          </Link>
         </div>
-      </div>
-    </footer>
+        <div>
+          <span className="footer-title">Services</span>
+          <a className="link link-hover">Branding</a>
+          <a className="link link-hover">Design</a>
+          <a className="link link-hover">Marketing</a>
+          <a className="link link-hover">Advertisement</a>
+        </div>
+        <div>
+          <span className="footer-title">Company</span>
+          <a className="link link-hover">About us</a>
+          <a className="link link-hover">Contact</a>
+          <a className="link link-hover">Jobs</a>
+          <a className="link link-hover">Press kit</a>
+        </div>
+        <div>
+          <span className="footer-title">Legal</span>
+          <a className="link link-hover">Terms of use</a>
+          <a className="link link-hover">Privacy policy</a>
+          <a className="link link-hover">Cookie policy</a>
+        </div>
+      </footer>
+    </div>
   );
 };
 

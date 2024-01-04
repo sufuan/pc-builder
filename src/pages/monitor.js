@@ -1,9 +1,8 @@
-import RootLayout from "@/components/Layout";
+import RootLayout from "@/components/Layouts/RootLayout";
 import Product from "@/components/UI/Product";
 
 const Monitor = ({ products }) => {
   const productCategory = products[0]?.category;
-  console.log(productCategory);
   return (
     <div className="container mx-auto my-10">
       <h1 className="font-bold text-2xl uppercase text-center py-4">
@@ -29,12 +28,10 @@ export const getStaticProps = async () => {
     "https://pc-builder-server-black.vercel.app/products?category=Monitor"
   );
   const data = await res.json();
-  const products = data.data;
-  console.log(products);
 
   return {
     props: {
-      products,
+      products: data?.data,
     },
   };
 };

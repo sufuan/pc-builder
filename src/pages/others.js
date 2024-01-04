@@ -1,7 +1,7 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 import Product from "@/components/UI/Product";
 
-const CPU = ({ products }) => {
+const Others = ({ products }) => {
   const productCategory = products[0]?.category;
   return (
     <div className="container mx-auto my-10">
@@ -17,15 +17,15 @@ const CPU = ({ products }) => {
   );
 };
 
-export default CPU;
+export default Others;
 
-CPU.getLayout = function getLayout(page) {
+Others.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    "https://pc-builder-server-black.vercel.app/products?category=CPU"
+    "https://pc-builder-server-black.vercel.app/products?category=Others"
   );
   const data = await res.json();
 

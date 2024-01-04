@@ -1,8 +1,8 @@
-const { configureStore } = require("@reduxjs/toolkit");
-import selectedItems from "./features/selectcomponent";
+import { configureStore } from "@reduxjs/toolkit";
+import selectComponentReducer from "./features/selectComponent";
 
-const store = configureStore({
-  reducer: { selectedItems: selectedItems },
+export const store = configureStore({
+  reducer: {
+    selectComponent: selectComponentReducer,
+  },
 });
-
-export default store;

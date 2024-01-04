@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import RootLayout from "@/components/Layout";
+import RootLayout from "@/components/Layouts/RootLayout";
 import Image from "next/image";
 
 const ProductDetailPage = ({ product }) => {
@@ -152,7 +152,7 @@ export const getStaticPaths = async () => {
     "https://pc-builder-server-black.vercel.app/products"
   );
   const data = await res.json();
-  const products = data?.data;
+  const products = data;
   const paths = products?.map((product) => ({
     params: { productId: product._id.toString() },
   }));
@@ -169,7 +169,6 @@ export const getStaticProps = async (context) => {
   );
   const data = await res.json();
   const product = data;
-
   return {
     props: {
       product,

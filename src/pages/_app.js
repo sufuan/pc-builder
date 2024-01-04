@@ -1,15 +1,20 @@
+import { store } from "@/redux/store";
 import "@/styles/globals.css";
-
-import Layout from "@/components/Layout";
+import { SessionProvider } from "next-auth/react";
+import { Toaster } from "react-hot-toast";
 import { Provider } from "react-redux";
-import store from "@/redux/store";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
-export default function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
+  const getLayout = Component.getLayout || ((page) => page);
+
   return (
-    <Provider store={store}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </Provider>
+    <SessionProvider session={pageProps.session}>
+      <Provider store={store}>
+        <Toaster />
+        {getLayout(<Component {...pageProps} />)}
+      </Provider>
+    </SessionProvider>
   );
 }
